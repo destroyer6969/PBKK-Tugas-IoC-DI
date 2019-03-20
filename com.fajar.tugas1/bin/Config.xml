@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+     <bean id="myApel" class = "pasarXml.Apel"></bean>
+     
+     
+    <bean id="profil" class="pasarXml.Pembeli">
+    		<constructor-arg ref="myApel"></constructor-arg> 
+    		<property name="id" value="001"></property>
+			<property name="name" value="Rasyid"></property>
+	    	<property name="email" value="rasyidfajar02@gmail.com"></property>
+	    	<property name="nohp" value="081686969123"></property>
+			
+	</bean>
+        
+</beans>
